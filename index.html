@@ -198,10 +198,12 @@ h1{font-weight:700;margin:10px auto 8px;font-size:34px;line-height:1.08;text-tra
     box-shadow:0 2px 8px rgba(0,0,0,.05);
   }
   .tabs a{
-    flex:0 0 auto;
-    padding:12px 11px 10px;
+    flex:1 1 auto;
+    text-align:center;
+    justify-content:center;
+    padding:12px 4px 10px;
     font-size:10px;
-    letter-spacing:.04em;
+    letter-spacing:.02em;
     white-space:nowrap;
   }
 
@@ -406,9 +408,10 @@ h1{font-weight:700;margin:10px auto 8px;font-size:34px;line-height:1.08;text-tra
 <style>
 @media (max-width:860px){
   .tabs{
-    justify-content:flex-start !important;
-    padding:0 7px !important;
+    justify-content:space-between !important;
+    padding:0 6px !important;
   }
+  @media (max-width:340px){ .tabs a{font-size:9px;letter-spacing:0;padding:12px 2px 10px} }
   body{padding-top:48px !important;}
 }
 </style>
