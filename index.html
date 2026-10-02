@@ -461,6 +461,7 @@ h1{font-weight:700;margin:10px auto 8px;font-size:34px;line-height:1.08;text-tra
   <a href="#zonas" data-panel="zonas">Por zona</a>
   <a href="#items" data-panel="items">Detalle de compra</a>
   <a href="#fuentes" data-panel="fuentes">Fuentes</a>
+  <a href="pergola.html">Pérgola</a>
 </nav>
 
 <section id="resumen" class="panel active">
@@ -566,6 +567,7 @@ const uniq=DATA.items.filter((x,i,a)=>x.source&&a.findIndex(y=>y.source===x.sour
 $('#sourceGrid').innerHTML=uniq.map(x=>`<div class="source"><div class="top"><div><h4>${x.item}</h4><p>${x.price} · ${x.detail}</p></div><div><strong>${fmt(x.total)}</strong></div></div>${source(x.source)}</div>`).join('');
 
 $$('.tabs a').forEach(b=>b.addEventListener('click',(e)=>{
+  if(!b.dataset.panel)return;
   e.preventDefault();
   $$('.tabs a').forEach(x=>x.classList.remove('active'));
   b.classList.add('active');

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Presupuesto pérgola | El Corazón de La Maisonnette</title>
+<meta name="description" content="Presupuesto de materiales de la pérgola abovedada de PVC del espacio inmersivo, con precios de sodimac.cl y enlace a cada cotización.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+<style>
+:root {
+  --red:#f5252a;
+  --red-soft:#fff3f3;
+  --blue:#2f4f9b;
+  --pink:#dc5b82;
+  --yellow:#e8bf1b;
+  --green:#43aa70;
+  --text:#171717;
+  --muted:#666;
+  --line:#d8d8d8;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  padding-top:54px;
+  background:#fff;
+  color:var(--text);
+  font-family:"Montserrat","Avenir Next","Helvetica Neue",Arial,sans-serif;
+  font-weight:400;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px 60px}
+.header{padding:34px 0 20px;border-bottom:1px solid #ececec;text-align:center}
+.logo90 img{width:min(270px,65vw);height:auto;display:block;margin:0 auto}
+.hearts{display:flex;gap:24px;justify-content:center;align-items:center;margin:20px 0 8px}
+.heart{width:22px;height:20px;display:block}
+.kicker{margin-top:28px;color:var(--blue);font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+h1{font-weight:700;margin:10px auto 8px;font-size:34px;line-height:1.08;text-transform:uppercase;letter-spacing:-.015em;font-weight:400;max-width:920px}
+.subtitle{font-size:19px;margin:0;color:#222;font-weight:400}
+.intro{max-width:940px;margin:20px auto 0;font-size:17px;line-height:1.58;font-weight:400}
+.intro strong{font-weight:700}
+
+.tabs{display:flex;gap:0;border-bottom:2px solid var(--red);margin:30px 0 34px;overflow-x:auto;white-space:nowrap;position:sticky;top:0;background:#fff;z-index:10}
+.tabs a{border:0;background:#fff;color:var(--text);padding:14px 18px 12px;font-family:"Montserrat","Avenir Next","Helvetica Neue",Arial,sans-serif;font-weight:400;cursor:pointer;text-transform:uppercase;font-size:12px;letter-spacing:.06em;border-top:3px solid transparent}
+.tabs a.active{font-weight:500;color:var(--red);border-top-color:var(--red);background:var(--red-soft)}
+
+.panel{display:block}
+.js .panel{display:none}
+.js .panel.active{display:block}
+
+.topline{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-bottom:30px}
+.totalbox{border:2px solid var(--red);padding:24px;min-height:182px;display:flex;flex-direction:column;justify-content:space-between}
+.totalbox .small{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--red);font-weight:500}
+.totalbox .amount{font-weight:500;font-size:54px;font-weight:400;letter-spacing:-.035em}
+.totalbox p{margin:0;font-size:14px;line-height:1.45;color:#4f4f4f;font-weight:400}
+.contextbox{background:var(--red-soft);border-left:8px solid var(--red);padding:24px}
+.contextbox h3{font-weight:700;margin:0 0 10px;color:var(--red);font-size:23px;font-weight:400}
+.contextbox p{margin:0;font-size:16px;line-height:1.56;font-weight:400}
+.contextbox strong{font-weight:700}
+
+.section-title{display:flex;align-items:baseline;gap:12px;margin:34px 0 14px}
+.section-title .num{color:var(--red);font-size:25px;font-weight:400}
+.section-title h2{font-weight:700;margin:0;font-size:26px;font-weight:400}
+.section-copy{margin:0 0 18px;font-size:16px;line-height:1.56;max-width:930px;font-weight:400}
+
+.cat-table{width:100%;border-collapse:collapse;border:1px solid var(--line)}
+.cat-table th{background:var(--red);color:#fff;text-align:left;padding:10px 12px;font-size:13px;font-weight:500}
+.cat-table td{border:1px solid var(--line);padding:11px 12px;font-size:14px;font-weight:400}
+.cat-table tr:nth-child(even) td{background:#fbfbfb}
+.cat-table td:last-child{text-align:right;font-weight:400}
+
+.zone-list{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.zone{border:1px solid #cdcdcd;background:#fff}
+.zone-title{display:grid;grid-template-columns:170px 1fr;background:#f9f9f9;border-bottom:1px solid #cdcdcd}
+.zone-title .tag{font-weight:700;padding:17px;color:var(--red);font-weight:400;font-size:17px;border-right:1px solid #cdcdcd}
+.zone-title .zn{padding:17px}
+.zone-title .zn strong{font-weight:700;display:block;font-size:17px;margin-bottom:4px;font-weight:400}
+.zone-title .zn span{font-size:13px;color:#555;line-height:1.4;font-weight:400}
+.zone-items{padding:8px 14px 12px}
+.zrow{display:grid;grid-template-columns:1fr auto;gap:16px;padding:10px 2px;border-bottom:1px solid #ececec}
+.zrow:last-child{border-bottom:0}
+.zrow b{font-weight:700;font-size:14px;font-weight:400}
+.zrow small{display:block;color:#666;font-size:12px;line-height:1.35;margin-top:3px;font-weight:400}
+.zcost{font-size:13px;font-weight:500;white-space:nowrap;text-align:right}
+
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.search{flex:1;min-width:250px;border:1px solid #999;padding:11px 12px;font-family:"Montserrat","Avenir Next","Helvetica Neue",Arial,sans-serif;font-size:14px;font-weight:400}
+.filterbar{display:flex;gap:6px;flex-wrap:wrap}
+.filterbar button{border:1px solid #999;background:#fff;padding:9px 10px;cursor:pointer;font-family:"Montserrat","Avenir Next","Helvetica Neue",Arial,sans-serif;font-size:11px;font-weight:400;text-transform:uppercase}
+.filterbar button.active{background:var(--red);border-color:var(--red);color:#fff}
+
+.table-scroll{overflow:auto;border:1px solid #bbb}
+.budget{width:100%;min-width:960px;border-collapse:collapse}
+.budget th{background:var(--red);color:#fff;text-align:left;padding:10px;font-size:13px;font-weight:500}
+.budget td{border:1px solid #ddd;padding:11px 10px;font-size:13px;vertical-align:top;font-weight:400}
+.budget tr:nth-child(even) td{background:#fbfbfb}
+.budget td.money{font-weight:500;text-align:right;white-space:nowrap}
+.cat{font-weight:500;color:var(--red);font-weight:400}
+.src{display:inline-block;border:1px solid var(--red);color:var(--red);text-decoration:none;padding:6px 8px;font-size:11px;font-weight:400}
+.src:hover{background:var(--red);color:#fff}
+.src.note{border-color:#888;color:#666}
+.totalrow td{font-weight:700;background:var(--red)!important;color:#fff;font-weight:400}
+
+.sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.source{border:1px solid #bbb;padding:16px}
+.source .top{display:flex;justify-content:space-between;gap:16px}
+.source h4{font-weight:700;margin:0 0 5px;font-size:16px;font-weight:400}
+.source p{margin:0 0 12px;font-size:12px;color:#555;line-height:1.4;font-weight:400}
+
+.footer{border-top:1px solid #ddd;margin-top:44px;padding-top:16px;font-size:12px;color:#666;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.footer img{height:54px;width:auto}
+.print{border:1px solid var(--red);background:#fff;color:var(--red);padding:8px 11px;font-family:"Montserrat","Avenir Next","Helvetica Neue",Arial,sans-serif;font-weight:400;cursor:pointer}
+.print:hover{background:var(--red);color:#fff}
+
+@media(max-width:860px){
+  .topline,.zone-list,.sources{grid-template-columns:1fr}
+  h1{font-size:29px}
+  .totalbox .amount{font-size:43px}
+  .zone-title{grid-template-columns:125px 1fr}
+}
+@media print{
+  .tabs,.toolbar,.print{display:none!important}
+  .panel{display:block!important;break-before:page}
+  .wrap{max-width:none}
+}
+
+.back{display:inline-block;margin:-34px 0 0;font-size:12px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:#666} .back:hover{color:var(--red)}
+.resumen-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
+.ficha-img{display:block;width:100%;height:auto;border:1px solid #ddd;margin-top:14px}
+.links a{margin-right:10px}
+@media(max-width:860px){.resumen-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="header">
+  <div class="logo90"><img src="logo.png" alt="Logo oficial 90 años La Maisonnette"></div>
+  <div class="hearts" aria-label="Colores La Maisonnette"><svg class="heart" viewBox="0 0 32 28"><path d="M16 27S2 18.2 2 8.8C2 3.7 8.4.8 12.4 4.5 14.1 6 15.2 8 16 9.7 16.8 8 18 6 19.6 4.5 23.7.8 30 3.7 30 8.8 30 18.2 16 27 16 27Z" fill="#dc5b82"/></svg><svg class="heart" viewBox="0 0 32 28"><path d="M16 27S2 18.2 2 8.8C2 3.7 8.4.8 12.4 4.5 14.1 6 15.2 8 16 9.7 16.8 8 18 6 19.6 4.5 23.7.8 30 3.7 30 8.8 30 18.2 16 27 16 27Z" fill="#e8bf1b"/></svg><svg class="heart" viewBox="0 0 32 28"><path d="M16 27S2 18.2 2 8.8C2 3.7 8.4.8 12.4 4.5 14.1 6 15.2 8 16 9.7 16.8 8 18 6 19.6 4.5 23.7.8 30 3.7 30 8.8 30 18.2 16 27 16 27Z" fill="#43aa70"/></svg><svg class="heart" viewBox="0 0 32 28"><path d="M16 27S2 18.2 2 8.8C2 3.7 8.4.8 12.4 4.5 14.1 6 15.2 8 16 9.7 16.8 8 18 6 19.6 4.5 23.7.8 30 3.7 30 8.8 30 18.2 16 27 16 27Z" fill="#2f4f9b"/></svg></div>
+  <div class="kicker">Proyecto “El Corazón de La Maisonnette”</div>
+  <h1>Presupuesto de la pérgola · Espacio inmersivo</h1>
+  <p class="subtitle">La estructura de PVC que sostiene las telas de la Zona 4.</p>
+  <p class="intro">Presupuesto <strong>complementario</strong> al presupuesto consolidado de la instalación: cubre sólo los materiales de la estructura, con precios de sodimac.cl del 2 oct 2026, IVA incluido, y el enlace a cada cotización. No incluye telas, mano de obra ni despacho.</p>
+</header>
+
+<nav class="tabs" aria-label="Navegación del presupuesto">
+  <a href="./">← Presupuesto general</a>
+  <a class="active" href="#resumen">Pérgola</a>
+  <a href="https://exalumnas-lamaisonnette.github.io/plan-implementacion-corazon/pergola.html">Diseño y fichas ↗</a>
+</nav>
+
+<section id="resumen" class="panel active">
+  <div class="topline">
+    <div class="totalbox">
+      <div class="small">Materiales de la pérgola</div>
+      <div class="amount">$154.406</div>
+      <p>IVA incluido, cantidades netas según el despiece de las fichas técnicas. Con una holgura de compra del 10 % para la prueba de curvado y repuestos: <strong>$169.847</strong>.</p>
+    </div>
+    <div class="contextbox">
+      <h3>Qué se compra</h3>
+      <p>7 tiras de tubo de 32 mm y 5 de 25 mm, los conectores de los 7 arcos, 28 abrazaderas para fijar la estructura a los pilares y el adhesivo. Todo está disponible en <strong>Sodimac</strong>, sin piezas especiales.</p>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="num">1.</span><h2>Resumen por partida</h2></div>
+  <table class="cat-table"><thead><tr><th>Partida</th><th>Monto</th></tr></thead><tbody><tr><td>Tubos</td><td>$71.980</td></tr><tr><td>Conectores</td><td>$51.346</td></tr><tr><td>Anclaje a pilares</td><td>$23.100</td></tr><tr><td>Adhesivo</td><td>$7.980</td></tr><tr><td><strong>TOTAL MATERIALES</strong></td><td><strong>$154.406</strong></td></tr></tbody></table>
+
+  <div class="section-title"><span class="num">2.</span><h2>Detalle de compra</h2></div>
+  <p class="section-copy">Cada línea indica cuántas piezas se necesitan y cuántas se compran según la presentación de venta. El código es el «Cód. tienda» de Sodimac.</p>
+  <div class="table-scroll">
+    <table class="budget">
+      <thead><tr><th>Partida</th><th>Producto</th><th>Cantidad</th><th>Valor unitario</th><th>Uso</th><th>Total</th><th>Fuente</th></tr></thead>
+      <tbody><tr><td class="cat">Tubos</td><td><strong>Tubo PN-10 Cementar PVC Agua 32 mm x 6 m</strong><br><span style="font-size:12px;color:#666">Vinilit · cód. 274208</span></td><td>7 necesarias<br>7 a comprar</td><td>$6.790</td><td>Largueros laterales y pies derechos · 40,2 m netos según plan de corte F-02</td><td class="money">$47.530</td><td><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110283444/tubo-pn-10-cementar-pvc-agua-32-mmx6-m/110283453" target="_blank" rel="noopener">Abrir cotización ↗</a></td></tr><tr><td class="cat">Tubos</td><td><strong>Tubo PN-12,5 Cementar PVC Agua 25 mm x 6 m</strong><br><span style="font-size:12px;color:#666">Vinilit · cód. 274194</span></td><td>5 necesarias<br>5 a comprar</td><td>$4.890</td><td>Medios arcos y larguero de clave · 28,1 m netos según plan de corte F-02</td><td class="money">$24.450</td><td><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110279330/tubo-pn-12-5-cementar-pvc-agua-25-mmx6-m/110279332" target="_blank" rel="noopener">Abrir cotización ↗</a></td></tr><tr><td class="cat">Conectores</td><td><strong>Tee PVC-P Cementar 32 mm</strong><br><span style="font-size:12px;color:#666">Vinilit · cód. 27741X</span></td><td>20 necesarias<br>20 a comprar</td><td>$1.440</td><td>K1 · pie derecho en nudos N1 y N3</td><td class="money">$28.800</td><td><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110242727/tee-pvc-p-cementar-32mm-1u/110242736" target="_blank" rel="noopener">Abrir cotización ↗</a></td></tr><tr><td class="cat">Conectores</td><td><strong>Codo 90° PVC-P Cementar 32 mm</strong><br><span style="font-size:12px;color:#666">Vinilit · cód. 276804</span></td><td>8 necesarias<br>8 a comprar</td><td>$250</td><td>K2 · extremos: nudos N2 y N4</td><td class="money">$2.000</td><td><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110243909/codo-90o-pvc-p-cementar-32mm-1u/110243910" target="_blank" rel="noopener">Abrir cotización ↗</a></td></tr><tr><td class="cat">Conectores</td><td><strong>Tee Reducción PVC-P Cementar 32 mm x 25 mm</strong><br><span style="font-size:12px;color:#666">Vinilit · cód. 27786X</span></td><td>14 necesarias<br>14 a comprar</td><td>$1.208</td><td>K3 · salida del medio arco en N1 y N2</td><td class="money">$16.912</td><td><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110248522/tee-reduccion-pvc-p-cementar-32mm-x-25mm-1u/110248526" target="_blank" rel="noopener">Abrir cotización ↗</a></td></tr><tr><td class="cat">Conectores</td><td><strong>Pack Tee PVC-P Cementar 25 mm, 10 unidades</strong><br><span style="font-size:12px;color:#666">Vinilit · cód. 796743</span></td><td>14 necesarias<br>2 × 10 u. a comprar</td><td>$1.817</td><td>K4 · nudo de clave N5, dos por arco</td><td class="money">$3.634</td><td><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110246131/pack-tee-pvc-p-cementar-25mm-10u/110246139" target="_blank" rel="noopener">Abrir cotización ↗</a></td></tr><tr><td class="cat">Anclaje a pilares</td><td><strong>Set de abrazaderas metálicas 32 mm para fijación de tubos, 5 unidades</strong><br><span style="font-size:12px;color:#666">MEC · cód. 728322</span></td><td>28 necesarias<br>6 × 5 u. a comprar</td><td>$1.590</td><td>Abrazaderas de largueros y pies derechos a los pilares (F-04)</td><td class="money">$9.540</td><td><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110223143/set-de-abrazaderas-metalicas-32-mm-para-fijacion-tubos-5-unidades/110223148" target="_blank" rel="noopener">Abrir cotización ↗</a></td></tr><tr><td class="cat">Anclaje a pilares</td><td><strong>Tarugo con tornillo 6 mm, 15 unidades</strong><br><span style="font-size:12px;color:#666">Fixser · cód. 630373</span></td><td>56 necesarias<br>4 × 15 u. a comprar</td><td>$3.390</td><td>Dos fijaciones por abrazadera, en el ladrillo</td><td class="money">$13.560</td><td><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110315493/Tarugo-con-tornillo-6-mm-15-unidades/110315496" target="_blank" rel="noopener">Abrir cotización ↗</a></td></tr><tr><td class="cat">Adhesivo</td><td><strong>Adhesivo Tradicional para PVC 240 cc</strong><br><span style="font-size:12px;color:#666">Vinilit · cód. 2721376</span></td><td>2 necesarias<br>2 a comprar</td><td>$3.990</td><td>158 uniones cementadas</td><td class="money">$7.980</td><td><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110298445/adhesivo-tradicional-para-pvc-240cc/110298451" target="_blank" rel="noopener">Abrir cotización ↗</a></td></tr><tr class="totalrow"><td colspan="5">TOTAL MATERIALES DE LA PÉRGOLA</td><td class="money">$154.406</td><td></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="section-title"><span class="num">3.</span><h2>Qué es la pérgola</h2></div>
+  <p class="section-copy">Un túnel abovedado de 4,88 m de largo con 7 arcos de PVC cada 0,81 m, 2,50 m libres al centro y unos 14 kg de tubería. Las telas del espacio inmersivo se fijan a sus largueros. El diseño completo, las vistas 3D y las fichas técnicas para construirlo están en el <a href="https://exalumnas-lamaisonnette.github.io/plan-implementacion-corazon/pergola.html">plan de implementación</a>.</p>
+  <img class="ficha-img" src="https://exalumnas-lamaisonnette.github.io/plan-implementacion-corazon/pergola/3d-2.jpg" alt="Vista 3D de la entrada al túnel de la pérgola, con las telas de referencia" loading="lazy">
+
+  <div class="section-title"><span class="num">4.</span><h2>Fuentes y respaldos</h2></div>
+  <p class="section-copy">Precios normales de internet en sodimac.cl, consultados el 2 oct 2026. Algunos productos tienen descuento mayorista desde 6 unidades, no aplicado aquí. Confirmar precio y stock antes de comprar.</p>
+  <div class="sources"><div class="source"><div class="top"><div><h4>Tubo PN-10 Cementar PVC Agua 32 mm x 6 m</h4><p>$6.790 c/u · Largueros laterales y pies derechos · 40,2 m netos según plan de corte F-02</p></div><div><strong>$47.530</strong></div></div><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110283444/tubo-pn-10-cementar-pvc-agua-32-mmx6-m/110283453" target="_blank" rel="noopener">Abrir cotización ↗</a></div><div class="source"><div class="top"><div><h4>Tubo PN-12,5 Cementar PVC Agua 25 mm x 6 m</h4><p>$4.890 c/u · Medios arcos y larguero de clave · 28,1 m netos según plan de corte F-02</p></div><div><strong>$24.450</strong></div></div><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110279330/tubo-pn-12-5-cementar-pvc-agua-25-mmx6-m/110279332" target="_blank" rel="noopener">Abrir cotización ↗</a></div><div class="source"><div class="top"><div><h4>Tee PVC-P Cementar 32 mm</h4><p>$1.440 c/u · K1 · pie derecho en nudos N1 y N3</p></div><div><strong>$28.800</strong></div></div><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110242727/tee-pvc-p-cementar-32mm-1u/110242736" target="_blank" rel="noopener">Abrir cotización ↗</a></div><div class="source"><div class="top"><div><h4>Codo 90° PVC-P Cementar 32 mm</h4><p>$250 c/u · K2 · extremos: nudos N2 y N4</p></div><div><strong>$2.000</strong></div></div><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110243909/codo-90o-pvc-p-cementar-32mm-1u/110243910" target="_blank" rel="noopener">Abrir cotización ↗</a></div><div class="source"><div class="top"><div><h4>Tee Reducción PVC-P Cementar 32 mm x 25 mm</h4><p>$1.208 c/u · K3 · salida del medio arco en N1 y N2</p></div><div><strong>$16.912</strong></div></div><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110248522/tee-reduccion-pvc-p-cementar-32mm-x-25mm-1u/110248526" target="_blank" rel="noopener">Abrir cotización ↗</a></div><div class="source"><div class="top"><div><h4>Pack Tee PVC-P Cementar 25 mm, 10 unidades</h4><p>$1.817 c/u · K4 · nudo de clave N5, dos por arco</p></div><div><strong>$3.634</strong></div></div><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110246131/pack-tee-pvc-p-cementar-25mm-10u/110246139" target="_blank" rel="noopener">Abrir cotización ↗</a></div><div class="source"><div class="top"><div><h4>Set de abrazaderas metálicas 32 mm para fijación de tubos, 5 unidades</h4><p>$1.590 c/u · Abrazaderas de largueros y pies derechos a los pilares (F-04)</p></div><div><strong>$9.540</strong></div></div><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110223143/set-de-abrazaderas-metalicas-32-mm-para-fijacion-tubos-5-unidades/110223148" target="_blank" rel="noopener">Abrir cotización ↗</a></div><div class="source"><div class="top"><div><h4>Tarugo con tornillo 6 mm, 15 unidades</h4><p>$3.390 c/u · Dos fijaciones por abrazadera, en el ladrillo</p></div><div><strong>$13.560</strong></div></div><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110315493/Tarugo-con-tornillo-6-mm-15-unidades/110315496" target="_blank" rel="noopener">Abrir cotización ↗</a></div><div class="source"><div class="top"><div><h4>Adhesivo Tradicional para PVC 240 cc</h4><p>$3.990 c/u · 158 uniones cementadas</p></div><div><strong>$7.980</strong></div></div><a class="src" href="https://www.sodimac.cl/sodimac-cl/articulo/110298445/adhesivo-tradicional-para-pvc-240cc/110298451" target="_blank" rel="noopener">Abrir cotización ↗</a></div></div>
+</section>
+
+<footer class="footer">
+  <div><img src="logo.png" alt="Logo 90 años La Maisonnette"></div>
+  <button class="print" onclick="window.print()">Imprimir / guardar PDF</button>
+</footer>
+</div>
+</body>
+</html>
